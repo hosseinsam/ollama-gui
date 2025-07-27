@@ -64,18 +64,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 
 ## Important Notes
-- Make sure Ollama is running and accessible at http://127.0.0.1:11434 before starting the UI
-- The application runs on port 5000 by default
-- When using Docker, ensure Ollama is running on the host machine and accessible to the container
-- The UI supports all models available in your Ollama installation
-## Project Structure
-- app.py : Main Flask application file
-- chat.py : Chat functionality and Ollama API integration
-- templates/chat.html : HTML template for the chat interface
-- requirements.txt : Python dependencies
-- Dockerfile : Container configuration
-Enjoy chatting with your Ollama models through this user-friendly interface!
-
+- Make sure Ollama is running and accessible at http://localhost:11434 before starting the UI
 
 
 
