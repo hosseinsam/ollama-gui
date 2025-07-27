@@ -1,4 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ollama Chat UI
+
+A web-based user interface for interacting with Ollama models through a clean and simple chat interface. This application provides a seamless way to communicate with different Ollama models through a web browser.
+
+## Features
+
+- Clean web interface for chatting with Ollama models
+- Model selection dropdown
+- Real-time streaming responses
+- Markdown support in responses
+- Easy-to-use interface
+
+## Prerequisites
+
+- [Ollama](https://ollama.ai/) installed on your system
+
+## Setup and Running
+
+### Local Setup
+
+1. First, start the Ollama server:
+```bash
+ollama serve
+```
 
 ## Getting Started
 
@@ -6,11 +29,20 @@ First, run the development server:
 
 ```bash
 npm run dev
+```
 # or
+
+```bash
 yarn dev
+```
 # or
+
+```bash
 pnpm dev
+```
 # or
+
+```bash
 bun dev
 ```
 
@@ -29,8 +61,23 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Important Notes
+- Make sure Ollama is running and accessible at http://127.0.0.1:11434 before starting the UI
+- The application runs on port 5000 by default
+- When using Docker, ensure Ollama is running on the host machine and accessible to the container
+- The UI supports all models available in your Ollama installation
+## Project Structure
+- app.py : Main Flask application file
+- chat.py : Chat functionality and Ollama API integration
+- templates/chat.html : HTML template for the chat interface
+- requirements.txt : Python dependencies
+- Dockerfile : Container configuration
+Enjoy chatting with your Ollama models through this user-friendly interface!
+
+
+
+
+
+
